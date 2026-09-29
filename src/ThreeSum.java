@@ -8,11 +8,21 @@ public class ThreeSum {
 
     // Count triples that sum to 0 (brute force O(n^3))
     public static int count(int[] a) {
+        int ayy = a.length;
+        int amount = 0;
+        for (int i = 0; i< ayy; i++){
+            for (int j = i+1; j < ayy; j++){
+                for (int k = j+1; k < ayy; k++){
 
-        int count = 0;
-        //TODO: Finish THreeSum
+                    if (a[i]+a[j]+a[k]==0){
+                       amount++;
 
-        return count;
+                    }
+                }
+            }
+        }
+
+        return amount;
     }
 
     public static void main(String[] args) throws IOException {
